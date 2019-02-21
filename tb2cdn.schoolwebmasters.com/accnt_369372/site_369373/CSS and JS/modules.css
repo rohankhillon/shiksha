@@ -1,0 +1,656 @@
+/*******************************************************************
+      QUICK LINKS
+ ****************************************************************** */
+
+.quicklinkscontainer-mobile {
+	max-width: 75rem;
+	margin: 10px auto;
+}
+
+.quicklinks-background {
+	position: relative;
+	padding: 15px 0 0;
+}
+
+.quicklinks-background:before {
+	content: '';
+	background-color: #000;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	z-index: -1;
+}
+
+.quicklinks-title {
+	font-size: 1.7em;
+	color: #fff;
+	font-family: 'Merriweather', serif;
+	font-weight: 400;
+	line-height: 1.5em;
+	margin: 10px auto;
+	text-align: left;
+	font-variant: small-caps;
+	max-width: 75rem;
+}
+
+a.quicklinks-mobile {
+	text-decoration: none;
+}
+
+a.quicklinks-mobile:hover {
+	text-decoration: underline;
+}
+
+.quicklinks-mobile-title {
+	margin-left: 15px;
+	width: 80%;
+	font-size: 1.2rem;
+	line-height: 1.5;
+	color: #fff;
+	font-family: 'Roboto Slab', serif;
+	text-transform: uppercase;
+}
+
+.quicklink-section a {
+	color: #fff;
+}
+
+@media screen and (min-width: 48em) {
+	.quicklinks-title {
+	font-size: 3.75em;
+}
+
+a.quicklinks-mobile:hover {
+	text-decoration: none;
+}
+
+.quicklinks-background {
+	height: 140px;
+	padding: 0;
+}
+
+.quicklinkscontainer-mobile {
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+}
+
+.quicklinks-mobile-title {
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: auto;
+	height: 100%;
+	font-size: 1.2em;
+}
+
+.quicklinkscontainer-mobile ul {
+	margin-left: 0px;
+	padding: 20px 5px 20px 35px;
+}
+
+a.quicklinks-mobile {
+	text-decoration: none;
+}
+
+.quicklink-section {
+	width: 20%;
+}
+
+.quicklink-section > div {
+	position: absolute;
+	background-color: #000;
+	z-index: 1000;
+}
+
+.quicklinks-mobile-title:before {
+	font-family: 'FontAwesome';
+	font-size: 45px;
+	color: #fff;
+	transition: 0.9s;
+	background-color: #A31513;
+	padding: 15px 10px;
+	margin-right: 10px;
+}
+
+.quicklinks-mobile-title.chooseus:before {
+	content: "\f00c";
+}
+
+.quicklinks-mobile-title.community:before {
+	content: "\f0ac";
+}
+
+.quicklinks-mobile-title.employees:before {
+	content: "\f109";
+}
+
+.quicklinks-mobile-title.students:before {
+	content: "\f040";
+}
+
+.quicklinks-mobile-title.parents:before {
+	content: "\f0c0";
+}
+
+.quicklinks-mobile-title.parents:hover:before {
+	text-decoration: none;
+}
+
+a.quicklinks-mobile:hover > .quicklinks-mobile-title:before, a.quicklinks-mobile:focus > .quicklinks-mobile-title:before {
+	transform: rotateY(180deg);
+}
+
+
+}
+
+@media screen and (min-width: 75em) {
+	.quicklinkscontainer-mobile {
+	overflow: hidden;
+}
+
+.quicklinks-title {
+	padding-left: 95px;
+}
+
+.quicklinks-mobile-title {
+	flex-direction: row;
+	font-size: 1.4em;
+}
+
+.quicklinks-background, .quicklink-section {
+	height: 55px;
+}
+
+.quicklinkscontainer-mobile ul {
+	width: 180px;
+}
+
+.quicklinks-mobile-title.parents:before {
+	font-size: 35px;
+}
+
+
+}
+
+/************************  SLIDESHOW ************************** */
+
+.slideshow {
+	display: none;
+        z-index: 1;
+}
+
+.slider {
+	width: 100%;
+	margin: auto;
+}
+
+.slick-slide {
+	margin: 0px;
+}
+
+.slick-slide img {
+	width: 100%;
+}
+
+.slick-prev:before,
+    .slick-next:before {
+	color: white;
+	font-size: 32px !important;
+}
+
+.slick-prev {
+	left: -35px !important;
+}
+
+.slick-slider {
+	margin-bottom: 0px !important;
+}
+
+.slideshow-container {
+	position: relative;
+}
+
+.slideshow {
+	display : none;
+}
+
+.slideshow img, .subpage-header-photo img {
+	width : 100%;
+}
+
+@media screen and (min-width: 48em) {
+	.slideshow {
+	display : inline-block;
+	margin-left: auto;
+	margin-right: auto;
+	display : block;
+}
+
+
+}
+
+@media screen and (min-width: 75em) {
+	.slideshow {
+	overflow: hidden;
+	max-height: 930px;
+}
+
+
+}
+
+/************************  WEB LINKS ************************** */
+
+#weblinksimage {
+	display: none;
+}
+
+.weblinks-smallview {
+	display : block;
+}
+
+@media screen and (min-width: 64em) {
+	.weblinks-smallview {
+	display : none;
+}
+
+#weblinksimage {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 640px;
+}
+
+
+}
+
+/************************  TRUMBA ************************** */
+
+.home-trumba {
+	margin: 10px 20px;
+}
+
+.main-trumba {
+	margin: 20px 15px;
+}
+
+.responsiveCal {
+	position: relative;
+	padding-bottom: 75%;
+	height: 0;
+	overflow: hidden;
+}
+
+.responsiveCal iframe {
+	position: absolute;
+	top:0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+tr.twSimpleTableEventRow.ebg0 {
+	background-color: #003065;
+}
+
+/************************ MAP ************************** */
+
+.map {
+	display : none;
+}
+
+@media screen and (min-width: 61.25em) {
+	.map {
+	display : block;
+	margin-left: 15px;
+	margin-top: 20px;
+}
+
+.map-link {
+	display : none;
+}
+
+
+}
+
+/************************ CONTACT MANAGER ************************** */
+
+.white-popup-block {
+	position: relative;
+	background: #FFF;
+	padding: 20px;
+	width:auto;
+	max-width: 800px;
+	margin: 20px auto;
+}
+
+.column20 {
+	margin-bottom: 25px;
+}
+
+a.popup-modal-dismiss {
+	background-color: #9a0418;
+	color: white;
+	padding: 10px 20px;
+	border-radius: 7px;
+}
+
+a.popup-modal-dismiss:hover {
+	background-color: #f3d563;
+}
+
+@media screen and (min-width: 30em) {
+	.cm-contacts {
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.contact {
+	width: 50%;
+	margin-bottom: 15px;
+}
+
+
+}
+
+@media screen and (min-width: 48em) {
+	.contact_img img {
+	display : block;
+	width: 100px;
+	margin-left: 20px;
+	margin-top: 10px;
+	border: 4px solid #89100c;
+}
+
+
+}
+
+/*@media screen and (min-width: 54em) {
+	.contact {
+	width: 33%;
+}
+
+*/
+}
+
+@media screen and (min-width: 76em) {
+	.contact_img img {
+	margin-left: 0px;
+}
+
+
+}
+
+/*********************** FAQ***************************** */
+
+#faqcontainer {
+	margin: 20px 20px 0 15px;
+}
+
+#faqcontainer p {
+	margin-left : 0px;
+	margin-top : 30px;
+}
+
+.faq-question {
+	font-size : 1.9em;
+	line-height : 1.2;
+	font-family: 'Saira Condensed', sans-serif;
+	color: #002f64;
+	font-weight : 500;
+	padding : 0px;
+	margin: 10px 15px -18px;
+}
+
+.faq-question:after {
+	height: 0;
+}
+
+.backtotop {
+	font-size : .8em;
+}
+
+/************************  FORMS ************************** */
+
+form {
+	margin: 20px;
+}
+
+form h2 {
+	margin-left: 0;
+}
+
+tr {
+	display:inline;
+}
+
+td {
+	margin:10px;
+	width:96%;
+	display:inline-block;
+}
+
+input, textarea {
+	display:block;
+	width: 100%;
+}
+
+input.btn.btn-submit {
+	max-width: 66px;
+}
+
+textarea {
+	min-height:110px;
+}
+
+input[type=checkbox],input[type=radio] {
+	box-sizing:border-box;
+	padding:0;
+	display:inline-block;
+	width:3%;
+	margin-left:15px;
+	margin-top: 10px;
+	float:left;
+}
+
+input[type=text] {
+	margin-top: 0;
+}
+
+label[for=rateprocess_2], label[for=rateprocess_3], label[for=rateprocess_4], label[for=rateprocess_5], label[for=rateprocess_6] {
+	width: 12%;
+}
+
+td h2 {
+	margin-left:0;
+}
+
+form label {
+	float:left;
+	margin-top:-5px;
+}
+
+.frm-field {
+	margin: 5px 0;
+}
+
+.frm-field label {
+	display: block;
+	width: 100%;
+	padding: 10px 0;
+}
+
+.frm-field fieldset {
+	border: 0 none;
+	padding: 0;
+}
+
+.frm-field fieldset legend {
+	left: 0;
+}
+
+.frm-field fieldset label {
+	padding-right: 8px;
+	width: auto;
+}
+
+/*********** EMERGENCY ALERT ************* */
+
+.white-popup-block {
+	position: relative;
+	background: #FFF;
+	padding: 20px;
+	width:auto;
+	max-width: 500px;
+	margin: 20px auto;
+}
+
+/*********** CURRICULUM BOXES ************* */
+
+.primary-years-boxes {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.primary-years-boxes img {
+	width: 100%;
+	max-width: 150px;
+	display: block;
+	border: 4px solid #002F64;
+}
+
+.primary-years-boxes a, span.nolink {
+	width: 40%;
+	margin: 15px;
+}
+
+@media screen and (min-width: 37.5em) {
+	.primary-years-boxes a, span.nolink {
+	width: 28%;
+}
+
+
+}
+
+@media screen and (min-width: 48em) {
+	.primary-years-boxes a, span.nolink {
+	width: 26%;
+}
+
+
+}
+
+/****************** FORMS PAGE LINKS *************************** */
+
+.form-buttons ul {
+	margin: 10px;
+	padding-left: 0;
+}
+
+.form-buttons li {
+	list-style-type: none;
+	background: #f7f7f7;
+	margin: 5px;
+	padding: 10px 10px 10px 40px;
+}
+
+.form-buttons li a {
+	color: #002f64;
+}
+
+.form-buttons li:before {
+	content: '\f138';
+	font-family: 'FontAwesome';
+	font-size: 1rem;
+	line-height: 1.2;
+	position: absolute;
+	margin-left: -20px;
+	margin-top: 3px;
+	color: #002f64;
+}
+
+.form-buttons a {
+	text-decoration: none;
+}
+
+.form-buttons li a:hover, .form-buttons li a:focus {
+	color: #990000;
+	text-decoration: underline;
+}
+
+@media screen and (min-width: 48em) {
+	.form-buttons ul {
+	margin: 0 20px;
+	padding: 0;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.form-buttons li {
+	width: 100%;
+}
+
+
+}
+
+@media screen and (min-width: 68em) {
+	.form-buttons li {
+	width: 41%;
+}
+
+
+}
+
+/****************** PARENTS PAGE LINKS *************************** */
+
+.parent-buttons {
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	flex-wrap: wrap;
+	margin-left: 10px;
+}
+
+.parent-buttons a {
+	display: block;
+	text-align: center;
+	border: 1px solid #002f64;
+	color: #002f64;
+	width: 100%;
+	margin: 10px;
+	padding: 20px 15px;
+	font-family: 'Saira Condensed', sans-serif;
+	font-size: 1.6rem;
+	text-decoration: none;
+}
+
+.parent-buttons i {
+	font-size: 2.5rem;
+	margin-bottom: 10px;
+}
+
+.parent-buttons a:hover, .parent-buttons a:focus {
+	color: #fff;
+	background-color: #002f64;
+}
+
+@media screen and (min-width: 28em) {
+	.parent-buttons a {
+	width: 37%;
+}
+
+
+}
+
+@media screen and (min-width: 62em) {
+	.parent-buttons a {
+	width: 25%;
+}
+
+
+}
+

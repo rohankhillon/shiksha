@@ -1,0 +1,462 @@
+/********************* HOME PAGE STYLING ********************** */
+
+/***************** TRUMBA ********************************** */
+
+.home-trumba {
+	margin: 20px 15px;
+}
+
+/***************** SLIDESHOW ********************************** */
+
+.slideshow img {
+	width: 100%;
+	max-width: 2000px;
+}
+
+/******************* QUICK LINKS BOXES ********************************** */
+
+.home-quicklinks-container {
+	background-color: #002f64;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	flex-wrap: wrap;
+	padding: 10px 0;
+	justify-content: center;
+}
+
+.clearfix {
+	clear:both;
+}
+
+figure.quicklink-box {
+	color: #fff;
+	position: relative;
+	float: left;
+	overflow: hidden;
+	margin: 10px .5%;
+	min-width: 220px;
+	max-width: 442px;
+	min-height: 154px;
+	max-height: 350px;
+	width: 90%;
+	background: #000000;
+	text-align: center;
+	border: 7px solid #fff;
+}
+
+figure.quicklink-box a {
+	color: #fff;
+}
+
+figure.quicklink-box * {
+	-webkit-box-sizing: padding-box;
+	box-sizing: padding-box;
+	-webkit-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+
+figure.quicklink-box img {
+	opacity: 0.8;
+	width: 100%;
+	margin-bottom: -8px;
+}
+
+figure.quicklink-box figcaption, figure.quicklink-box .box-caption {
+	bottom: 0;
+	display: block;
+	left: 0;
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+
+figure.quicklink-box h2 {
+	color: #fff;
+	font-weight: 400;
+	left: 0;
+	right: 0;
+	letter-spacing: -1px;
+	margin: 0 auto;
+	position: absolute;
+	text-transform: uppercase;
+	bottom: 50%;
+	-webkit-transform: translateY(50%);
+	transform: translateY(50%);
+}
+
+figure.quicklink-box h2 span {
+	font-weight: 700;
+}
+
+figure.quicklink-box p {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	top: 50%;
+	opacity: 0;
+	font-size: 14px;
+	-webkit-transform: translateY(-20%) scale(0.7);
+	transform: translateY(-20%) scale(0.7);
+}
+
+figure.quicklink-box .square {
+	height: 78px;
+	width: 78px;
+	overflow: hidden;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	content: '';
+	-webkit-transform: rotate(45deg) translate(-50%, -50%);
+	transform: rotate(45deg) translate(-50%, -50%);
+	-webkit-transform-origin: 0 0;
+	transform-origin: 0 0;
+}
+
+figure.quicklink-box .square:before,
+figure.quicklink-box .square:after,
+figure.quicklink-box .square span:before,
+figure.quicklink-box .square span:after {
+	background-color: #ffffff;
+	position: absolute;
+	content: "";
+	display: block;
+	-webkit-transition: all 0.4s ease-in-out;
+	transition: all 0.4s ease-in-out;
+}
+
+figure.quicklink-box .square:before,
+figure.quicklink-box .square:after {
+	width: 65%;
+	height: 2px;
+}
+
+figure.quicklink-box .square span:before,
+figure.quicklink-box .square span:after {
+	width: 2px;
+	height: 65%;
+}
+
+figure.quicklink-box .square:before,
+figure.quicklink-box .square span:before {
+	left: 0;
+	top: 0;
+}
+
+figure.quicklink-box .square:after,
+figure.quicklink-box .square span:after {
+	bottom: 0;
+	right: 0;
+}
+
+figure.quicklink-box:hover img,
+figure.quicklink-box a:focus > img {
+	opacity: 0.25;
+	-webkit-transform: scale(1.1);
+	transform: scale(1.1);
+}
+
+figure.quicklink-box:hover h2,
+figure.quicklink-box a:focus h2 {
+	opacity: 1;
+	-webkit-transform: translateY(0px);
+	transform: translateY(0px);
+}
+
+figure.quicklink-box:hover p,
+figure.quicklink-box a:focus p {
+	opacity: 1;
+	-webkit-transform: translateY(0px) scale(1);
+	transform: translateY(0px) scale(1);
+}
+
+figure.quicklink-box:hover .square:before,
+figure.quicklink-box a:focus > .square:before {
+	width: 38%;
+}
+
+figure.quicklink-box:hover .square span:before,
+figure.quicklink-box a:focus > .square span:before {
+	height: 38%;
+}
+
+figure.quicklink-box:hover .square:after,
+figure.quicklink-box a:focus > .square:after {
+	width: 55%;
+}
+
+figure.quicklink-box:hover .square span:after,
+figure.quicklink-box a:focus > .square span:after {
+	height: 55%;
+}
+
+@media screen and (min-width: 48em) {
+	figure.quicklink-box {
+	width: 45%;
+}
+
+
+}
+
+@media screen and (min-width: 62em) {
+	figure.quicklink-box {
+	width: 30%;
+}
+
+
+}
+
+@media screen and (min-width: 75em) {
+	figure.quicklink-box {
+	width: 22%;
+}
+
+
+}
+
+/***************  HOME NEWS *********************************** */
+
+.home-news-background {
+	background-color: #f7f7f7;
+	border-top: 20px solid #fff;
+	border-bottom: 20px solid #fff;
+}
+
+.home-news-container {
+	max-width: 75rem;
+	margin: auto;
+}
+
+.home-news-container h2 {
+	font-family: 'Saira Condensed', sans-serif;
+	font-size: 2.5em;
+	line-height: 1.1;
+	color: #002f64;
+	text-transform: uppercase;
+	font-weight: 800;
+	border-bottom: 0;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	align-items: center;
+	margin: 15px 15px 5px;
+}
+
+.home-news-container h2:after {
+	content: '';
+	background-color: #990000;
+	height: 13px;
+	display: inline-block;
+	margin: 0 0px 0 10px;
+	flex-grow: 200;
+}
+
+.home-news-subtitle {
+	font-family: 'Saira Condensed', sans-serif;
+	font-weight: 200;
+	color: #990000;
+	font-size: 1.5625rem;
+	line-height: 1.1;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	align-items: center;
+	margin: 0px 15px 5px;
+}
+
+.home-news-subtitle:after {
+	content: '';
+	background-color: #990000;
+	height: 3px;
+	display: inline-block;
+	margin: 5px 0px 0 10px;
+	flex-grow: 200;
+}
+
+.nt-title {
+	font-family: 'Saira Condensed', sans-serif;
+	color: #002f64;
+	font-weight: 500;
+	font-size: 1.875rem;
+	margin: 15px;
+}
+
+a.readmore-link {
+	margin-left: 15px;
+}
+
+.owl-theme .owl-controls .owl-page span {
+	background: #002f64 !important;
+}
+
+.owl-buttons {
+	display: none;
+}
+
+.owl-carousel .owl-wrapper-outer {
+	width: 98%;
+}
+
+@media screen and (min-width: 48em) {
+	.whatweoffer-news-container {
+	position: relative;
+	display: -webkit-flex;
+	display: flex;
+	display: -ms-flexbox;
+	z-index: 0;
+}
+
+.whats-happening-container {
+	width: 50%;
+	border-left: 10px solid white;
+}
+
+.home-news-container {
+	position: relative;
+	display: -webkit-flex;
+	display: flex;
+	display: -ms-flexbox;
+	z-index: 0;
+}
+
+.home-news {
+	width: 50%;
+	border-right: 10px solid white;
+}
+
+.home-news-backgroundText {
+	right: 0;
+}
+
+#nt-container {
+	margin: 20px;
+}
+
+.what-we-offer-video img {
+	margin-top: 45px;
+}
+
+.what-we-offer-video {
+	margin: 0 20px 0 37px;
+}
+
+.owl-theme .owl-controls {
+	text-align: right !important;
+}
+
+
+}
+
+@media screen and (min-width: 61.25em) {
+	.home-news-container h2 {
+	font-size: 3.5rem;
+}
+
+
+}
+
+@media screen and (min-width: 65em) {
+	.home-news-subtitle:before {
+	content: '';
+	background-color: #990000;
+	height: 3px;
+	width: 24px;
+	display: inline-block;
+	margin: 5px 10px 0 0px;
+	flex-grow: 1;
+}
+
+
+}
+
+/*************************** TESTIMONIALS ******************** */
+
+.home-testimonials-content {
+	color: #002f64;
+}
+
+.home-testimonials-author {
+	font-family: 'Karma', serif;
+	color: #002f64;
+	font-size: 1.2rem;
+	line-height: 1;
+	text-align: center;
+	margin-top: 15px;
+	text-transform: uppercase;
+}
+
+.home-testimonials-background {
+	background-image: url(../Graphics/background_testimonials.jpg);
+	background-position: 33%;
+	position: relative;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+}
+
+.home-testimonials-box {
+	background-color: rgba(255, 255, 255, 0.749);
+	padding: 30px;
+	border-bottom: 18px solid #002f64;
+	position: relative;
+}
+
+.home-testimonials-box:after {
+	content: '';
+	height: 2px;
+	width: 100%;
+	background-color: #002f64;
+	position: absolute;
+	bottom: 2px;
+	left: 0;
+}
+
+@media screen and (min-width: 48em) {
+	.home-testimonials-container {
+	display: -webkit-flex;
+	display: flex;
+	display: -ms-flexbox;
+	max-width: 75rem;
+	margin: auto;
+	justify-content: space-around;
+	padding-top: 4%;
+	padding-bottom: 4%;
+}
+
+.home-testimonials-background {
+	min-height: 475px;
+}
+
+.home-testimonials-box {
+	max-width: 265px;
+	width: 24%;
+}
+
+/************* Slide In ***************** */
+
+.animateBlock {
+	opacity: 0;
+	position: relative;
+	filter: alpha(opacity=0);
+	-webkit-transition: all .55s ease-in;
+	-moz-transition: all .55s ease-in;
+	-ms-transition: all .55s ease-in;
+	-o-transition: all .55s ease-in;
+	transition: all .55s ease-in;
+}
+
+.animateBlock.right {
+	right: -18%;
+}
+
+.right.animated {
+	right: 0%;
+	opacity: 1;
+	filter: alpha(opacity=100);
+}
+
+
+}
+
